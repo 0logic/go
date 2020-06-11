@@ -3,9 +3,15 @@ package main
 import "fmt"
 
 func main(){
+
+	var slice1 [2] int
+	fmt.Println(slice1)
+
+	var slice2 = make([]int, 4,5)
+	fmt.Println(slice2,len(slice2),cap(slice2))
 	//slice := [] int {1,2,4,5,6}
 	//fmt.Println(slice)
-	var slice [] int = make([]int,3,5)
+	/*var slice = make([]int,3,5)
 	fmt.Println(slice)
 
 	var arr1 = [] int {1,2,4,5,6,7,8,60}
@@ -14,7 +20,7 @@ func main(){
 	fmt.Println(len(slice))	
 	var arr2 [3] int
 	arr2[0] = 3
-	fmt.Println(arr2)
+	fmt.Println(arr2)*/
 
 
 	/*fmt.Printf("slice length %d\n",len(slice))
