@@ -9,6 +9,11 @@ func main(){
 
 	var slice2 = make([]int, 4,5)
 	fmt.Println(slice2,len(slice2),cap(slice2))
+
+
+
+	var slice3 = []int{1,3,4,5,6,7,34,31,23}
+	fmt.Println(slice3[:2])
 	//slice := [] int {1,2,4,5,6}
 	//fmt.Println(slice)
 	/*var slice = make([]int,3,5)

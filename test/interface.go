@@ -1,8 +1,54 @@
 package main
+
 import "fmt"
 
+type Phone interface{
+	call()
+}
 
-type Interface1 interface{
+type NokiaPhone struct{
+
+}
+
+func (ssss NokiaPhone) call() {
+	fmt.Println("this is nokia phone")
+}
+
+type ApplePhone struct{
+
+}
+
+func (tttt ApplePhone) call(){
+	fmt.Println("this is apple phone")
+}
+
+
+func main(){
+	var phone Phone
+	phone = new(ApplePhone)
+	phone.call()
+
+	phone = new(NokiaPhone)
+	phone.call()
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*type Interface1 interface{
 	call()
 }
 
@@ -29,5 +75,5 @@ func main(){
 	phone = new(Struct2)
 	phone.call()
 	
-}
+}*/
 
